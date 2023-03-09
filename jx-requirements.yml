@@ -1,7 +1,6 @@
 apiVersion: core.jenkins-x.io/v4beta1
 kind: Requirements
 spec:
-  # kuberhealthy: false
   autoUpdate:
     enabled: false
     schedule: ""
@@ -21,13 +20,14 @@ spec:
     - key: staging
     - key: production
   ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: -jx.
-    tls:
-      email: ""
-      enabled: false
-      production: false
+    {}
+    # domain: ""
+    # externalDNS: false
+    # namespaceSubDomain: -jx.
+    # tls:
+    #   email: ""
+    #   enabled: false
+    #   production: false
   repository: bucketrepo
   secretStorage: local
   vault: {}
