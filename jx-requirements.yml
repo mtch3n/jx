@@ -8,7 +8,7 @@ spec:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
     clusterName: kind
     devEnvApprovers:
-      - todo
+    - todo
     environmentGitOwner: todo
     gitKind: github
     gitName: github
@@ -16,9 +16,11 @@ spec:
     provider: kubernetes
     registry: ghcr.io
   environments:
-    - key: dev
-    - key: staging
-    - key: production
+  - key: dev
+    owner: mtch3n
+    repository: jx
+  - key: staging
+  - key: production
   ingress:
     domain: ""
     kind: ingress
