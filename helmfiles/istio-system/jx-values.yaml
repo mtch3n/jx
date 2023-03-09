@@ -38,7 +38,7 @@ jxRequirements:
   ingress:
     domain: change.me
     kind: istio
-    namespaceSubDomain: -jx.
+    namespaceSubDomain: -istio-system.
     tls:
       email: ""
       enabled: false
