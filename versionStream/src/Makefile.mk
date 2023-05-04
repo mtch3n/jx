@@ -217,11 +217,11 @@ copy-resources: pre-build
 
 .PHONY: verify-ingress
 verify-ingress:
-	jx verify ingress --ingress-service ingress-nginx-controller
+	jx verify ingress
 
 .PHONY: verify-ingress-ignore
 verify-ingress-ignore:
-	-jx verify ingress --ingress-service ingress-nginx-controller
+	-jx verify ingress
 
 .PHONY: verify-install
 verify-install:
