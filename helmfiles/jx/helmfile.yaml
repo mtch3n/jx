@@ -54,5 +54,17 @@ releases:
   name: local-external-secrets
   values:
   - jx-values.yaml
+- chart: jxgh/cd-indicators
+  version: 0.0.18
+  name: cd-indicators
+  values:
+  - ../../versionStream/charts/jxgh/cd-indicators/values.yaml
+  - jx-values.yaml
+- chart: jxgh/lighthouse-webui-plugin
+  version: 0.1.7
+  name: lighthouse-webui-plugin
+  values:
+  - ../../versionStream/charts/jxgh/lighthouse-webui-plugin/values.yaml.gotmpl
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
