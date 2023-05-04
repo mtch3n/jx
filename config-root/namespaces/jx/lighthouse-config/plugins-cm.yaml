@@ -6,6 +6,10 @@ data:
       repos:
       - mtch3n/jx
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - mtch3n/golang-http-test
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +20,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      mtch3n/golang-http-test:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       mtch3n/jx:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -26,6 +35,20 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      mtch3n/golang-http-test:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
       mtch3n/jx:
       - config-updater
       - approve
@@ -53,6 +76,11 @@ data:
     - repos:
       - mtch3n/jx
       trusted_org: mtch3n
+    - repos:
+      - mtch3n/golang-http-test
+      trusted_org: mtch3n
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

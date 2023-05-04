@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: mtch3n
+    provider: github
+    repository: golang-http-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mtch3n-golang-http-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/mtch3n/golang-http-test.git
+  org: mtch3n
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: golang-http-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/mtch3n/golang-http-test
