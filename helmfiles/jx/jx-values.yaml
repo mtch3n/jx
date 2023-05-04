@@ -18,7 +18,7 @@ jx:
       username: jenkins-x-labs-bot
 jxRequirements:
   autoUpdate:
-    enabled: false
+    enabled: true
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
@@ -38,7 +38,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: 192.168.211.13.nip.io
     kind: ingress
     namespaceSubDomain: -jx.
     tls:

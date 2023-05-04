@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - mtch3n/jx
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.192.168.211.13.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
