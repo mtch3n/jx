@@ -26,7 +26,7 @@
 	      <td>jx-pipelines-visualizer</td>
 	      <td title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer</a></td>
 	      <td>1.8.2</td>
-	      <td><a href='http://dashboard-jx.192.168.211.13.nip.io'>view</a></td>
+	      <td><a href='http://dashboard-jx.203.145.222.48.nip.io'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
     <tr>
@@ -68,7 +68,7 @@
 	      <td>lighthouse-webui-plugin</td>
 	      <td title='Web UI for Lighthouse, to visualize events, jobs, and merge status/history.'><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse-webui-plugin</a></td>
 	      <td>0.1.7</td>
-	      <td><a href='http://lighthouse-jx.192.168.211.13.nip.io'>view</a></td>
+	      <td><a href='http://lighthouse-jx.203.145.222.48.nip.io'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin'>source</a></td>
 	    </tr>
     <tr>
