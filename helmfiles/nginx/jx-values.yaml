@@ -18,7 +18,7 @@ jx:
       username: jenkins-x-labs-bot
 jxRequirements:
   autoUpdate:
-    enabled: false
+    enabled: true
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
@@ -33,16 +33,21 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: mtch3n
+    repository: jx
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: 203.145.222.48.nip.io
+    ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: -nginx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: jx
   repository: bucketrepo
   secretStorage: local
   vault: {}
