@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://bucketrepo-jx.203.145.222.48.nip.io
+releases:
+- chart: dev/php-helloworld
+  version: 0.0.1
+  name: php-helloworld
+templates: {}
+renderedvalues: {}
