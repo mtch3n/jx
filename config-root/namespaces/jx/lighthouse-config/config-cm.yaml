@@ -9,6 +9,7 @@ data:
       enabled:
         mtch3n/golang-http-test: true
         mtch3n/jx: true
+        mtch3n/php-helloworld: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         mtch3n/golang-http-test: merge
         mtch3n/jx: merge
+        mtch3n/php-helloworld: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - mtch3n/jx
         - mtch3n/golang-http-test
+        - mtch3n/php-helloworld
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - mtch3n/jx
         - mtch3n/golang-http-test
+        - mtch3n/php-helloworld
       target_url: http://lighthouse-jx.203.145.222.48.nip.io/merge/status
 kind: ConfigMap
 metadata:
