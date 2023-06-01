@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: golang-http-test
+    - name: php-helloworld
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
